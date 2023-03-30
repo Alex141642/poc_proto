@@ -1,5 +1,6 @@
 package main
 
+// protoc --proto_path="../proto/" --go_out='./proto' '..\proto\testt.proto'
 import (
 	"fmt"
 	"titi/proto/proto"
