@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package test;
+
+option go_package="proto/";
+
+
+enum RequestType {
+    UNKONWN = 0;
+    READ = 1;
+    WRITE = 2;
+}
+message Request {
+    RequestType Type = 1;
+    oneof Params {
+        string First  = 2;
+        string Second = 3;
+    }
+}
